@@ -1,0 +1,38 @@
+body {
+  font-family: "Quicksand Book", sans-serif;
+}
+
+.nav-pills .nav-link {
+  border-radius: 0;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #bf616b;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: white;
+}
+
+.navbar .navbar-nav .nav-item .nav-link svg {
+  font-size: 1.5rem;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  padding: 0.8rem 3rem;
+  transition: all 0.5s ease-out;
+}
+
+@media (max-width: 992px) {
+  .navbar .navbar-nav {
+    flex-direction: inherit;
+  }
+  .navbar .navbar-nav .nav-item .nav-link svg {
+    font-size: 1rem;
+  }
+  .navbar .navbar-nav .nav-item .nav-link {
+    padding: 1rem;
+  }
+}
