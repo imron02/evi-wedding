@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import styled from "styled-components";
 import { CovidInfoComponent } from "../components/home/covid_info";
 import { HeaderComponent } from "../components/home/header";
+import { StoryComponent } from "../components/home/story";
 
 const BgMaskImage = "/images/bg-mask.png";
 
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
       <HeaderComponent />
       <BgMask />
       <CovidInfoComponent />
+      <StoryComponent />
     </>
   );
 };

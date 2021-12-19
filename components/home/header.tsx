@@ -60,8 +60,20 @@ export const HeaderComponent = () => (
         <p> di Yon Arhanud 1 </p>
       </div>
     </Title>
-    <div style={{ width: "100%", height: "100%", zIndex: -1 }}>
-      <Image alt="img-background" src="/images/cover.jpeg" layout="fill" objectFit="cover" />
+    <div
+      style={{
+        width: "100%",
+        height: "100%",
+        position: "relative",
+        zIndex: -1,
+      }}
+    >
+      <Image
+        alt="img-background"
+        src="/images/cover.jpeg"
+        layout="fill"
+        objectFit="cover"
+      />
     </div>
   </Header>
 );
