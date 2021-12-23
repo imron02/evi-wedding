@@ -9,6 +9,7 @@ const Section = styled.section`
   margin-top: 4rem;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 10%;
 `;
 const Heading2 = styled.h2`
   font-family: "Quicksand Bold", sans-serif;
@@ -40,8 +41,8 @@ export const StoryComponent = () => (
       <Image src={FlowerImage} alt="Flower" width={250} height={100} />
       <Heading2>Our Love Story</Heading2>
     </div>
-    <Slider {...settings}>
-      <div>
+    <Slider {...settings} className='col-lg-8 mx-auto'>
+      <div className="px-1">
         <StoryTitle>Pertama Kenal</StoryTitle>
         <p className="text-center px-1">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
@@ -57,7 +58,7 @@ export const StoryComponent = () => (
           </small>
         </p>
       </div>
-      <div>
+      <div className="px-1">
         <StoryTitle>Menyatakan Cinta</StoryTitle>
         <p className="text-center">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
@@ -73,7 +74,7 @@ export const StoryComponent = () => (
           </small>
         </p>
       </div>
-      <div>
+      <div className="px-1">
         <StoryTitle>Tunangan</StoryTitle>
         <p className="text-center">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda

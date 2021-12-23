@@ -1,6 +1,13 @@
 body {
   font-family: "Quicksand Book", sans-serif;
+  font-weight: bold;
 }
+
+/* @media (min-width: 1200px) {
+  body {
+    max-width: 99%;
+  }
+} */
 
 .nav-pills .nav-link {
   border-radius: 0;

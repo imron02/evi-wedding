@@ -12,9 +12,9 @@ import "bootstrap/dist/css/bootstrap.css";
 import "../styles/globals.css";
 
 const AppContainer = styled.div`
-  @media (min-width: 1200px) {
-    max-width: 60%;
-  }
+  // @media (min-width: 1200px) {
+  //   max-width: 60%;
+  // }
   padding-bottom: 15%;
 `;
 
@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <link href="http://fonts.cdnfonts.com/css/quicksand" rel="stylesheet" />
+        <link href="https://fonts.cdnfonts.com/css/quicksand" rel="stylesheet" />
       </Head>
       <AppContainer id="app" className="mx-auto">
         <Header />
