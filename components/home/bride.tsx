@@ -69,7 +69,7 @@ export const BrideComponent = () => (
         <br />
       </p>
     </div>
-    <div className="col-lg-7 mx-auto">
+    <div className="col-lg-8 mx-auto">
       <Row className="g-0">
         <Col
           data-aos="zoom-in-up"

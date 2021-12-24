@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
+import {useRouter} from 'next/router';
 
 const Header = styled.section`
   &:before {
@@ -43,37 +44,41 @@ const Heading2 = styled.h2`
   font-family: "Quicksand Bold", sans-serif;
 `;
 
-export const HeaderComponent = () => (
-  <Header id="home" style={{ height: "100vh" }} className="mx-auto">
-    <Title>
-      <div className="text-center" style={{ marginTop: "5rem" }}>
-        <Heading4>We Are Getting Married</Heading4>
-        <Heading1>Resti &amp; Imron</Heading1>
-        <Heading2>15 Juli 2017</Heading2>
+export const HeaderComponent = () => {
+  const {query} = useRouter();
 
-        <p className="mt-5">
-          <i>Kepada Yth</i>
-          <br />
-          <i>Bapak/Ibu/Saudara/i</i>
-        </p>
-        {/* <h2 className="text-capitalize">{user}</h2> */}
-        <p> di Yon Arhanud 1 </p>
+  return (
+    <Header id="home" style={{height: "100vh"}} className="mx-auto">
+      <Title>
+        <div className="text-center" style={{marginTop: "5rem"}}>
+          <Heading4>We Are Getting Married</Heading4>
+          <Heading1>Resti &amp; Imron</Heading1>
+          <Heading2>15 Juli 2017</Heading2>
+
+          <p className="mt-5">
+            <i>Kepada Yth</i>
+            <br />
+            <i>Bapak/Ibu/Saudara/i</i>
+          </p>
+           <h2 className="text-capitalize">{query?.undang || ''}</h2>
+          <p> di Yon Arhanud 1 </p>
+        </div>
+      </Title>
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          position: "relative",
+          zIndex: -1,
+        }}
+      >
+        <Image
+          alt="img-background"
+          src="/images/cover.jpeg"
+          layout="fill"
+          objectFit="cover"
+        />
       </div>
-    </Title>
-    <div
-      style={{
-        width: "100%",
-        height: "100%",
-        position: "relative",
-        zIndex: -1,
-      }}
-    >
-      <Image
-        alt="img-background"
-        src="/images/cover.jpeg"
-        layout="fill"
-        objectFit="cover"
-      />
-    </div>
-  </Header>
-);
+    </Header>
+  );
+};
