@@ -53,7 +53,7 @@ const BgMask3 = styled.div`
 `;
 const SendGift = styled.div`
   position: fixed;
-  bottom: 17%;
+  bottom: 21%;
   left: 0;
   right: 0;
   margin: auto;
@@ -74,21 +74,27 @@ const Audio = styled.audio`
   right: 0;
   margin: auto;
 `;
+const Disqus = styled.div`
+  padding-bottom: 20%;
+  @media (max-device-width: 640px) {
+    padding-bottom: 50%;
+  }
+`
 
 const DisqusComments = () => {
-  const disqusShortname = "your-disqus-shortname"
+  const disqusShortname = "http-evi-bosnia-vercel-app"
   const disqusConfig = {
     url: "https://evi-bosnia.vercel.app/",
     identifier: '1', // Single post id
     title: 'The Wedding Of Evi & Bosnia' // Single post title
   }
   return (
-    <div style={{ marginBottom: '20%' }}>
+    <Disqus className="mt-5 px-1">
       <DiscussionEmbed
         shortname={disqusShortname}
         config={disqusConfig}
       />
-    </div>
+    </Disqus>
   )
 }
 
