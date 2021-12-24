@@ -36,7 +36,7 @@ const settings = {
 };
 
 export const StoryComponent = () => (
-  <Section id="story">
+  <Section id="story" data-aos="zoom-in-down">
     <div className="d-flex align-items-center flex-column">
       <Image src={FlowerImage} alt="Flower" width={250} height={100} />
       <Heading2>Our Love Story</Heading2>

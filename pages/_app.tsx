@@ -38,11 +38,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="description"
               content="Evi &amp; Bosnia akan menikah pada hari Sabtu, 5 Maret 2022." />
         <meta name="keywords" content="evi,bosnia,undangan,pernikahan,online,website,wedding,invitation" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@datengdong" />
-        <meta name="twitter:creator" content="@datengdong" />
-        <meta property="og:url" content="https://demo.datengdong.com" />
-        <meta property="og:title" content="Romeo &amp; Juliet Wedding" />
+        <meta property="og:url" content="https://evi-bosnia.vercel.app" />
+        <meta property="og:title" content="Evi &amp; Bosnia Wedding" />
         <meta property="og:description"
               content="Evi &amp; Bosnnia akan menikah pada hari Sabtu, 5 Maret 2022" />
         <meta property="og:image"
