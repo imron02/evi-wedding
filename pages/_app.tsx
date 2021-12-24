@@ -3,25 +3,22 @@ import {useEffect} from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import styled from "styled-components";
-import Header from "../components/header";
 import Head from "next/head";
-import {useRouter} from "next/router";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "../styles/globals.css";
 
-const AppContainer = styled.div`
-  // @media (min-width: 1200px) {
-  //   max-width: 60%;
-  // }
-  padding-bottom: 15%;
+export const Heading2 = styled.h2`
+  font-family: "Chopin Script", sans-serif;
+  font-size: 5rem;
+  @media (max-device-width: 640px) {
+    font-size: 3rem;
+  }
 `;
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const router = useRouter();
-
   useEffect(() => {
     AOS.init();
     typeof document !== undefined
@@ -46,11 +43,11 @@ function MyApp({ Component, pageProps }: AppProps) {
               content="/images/cover.jpeg" />
         <meta property="og:image:alt" content="Evi &amp; Bosnia Wedding Image" />
         <link href="https://fonts.cdnfonts.com/css/quicksand" rel="stylesheet" />
+        <link href="https://fonts.cdnfonts.com/css/chopin-script" rel="stylesheet" />
       </Head>
-      <AppContainer id="app" className="mx-auto">
-        {router.pathname !== '/_error' ? <Header /> : null}
+      <div id="app" className="mx-auto">
         <Component {...pageProps} />
-      </AppContainer>
+      </div>
     </>
   );
 }

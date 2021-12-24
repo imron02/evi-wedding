@@ -7,7 +7,10 @@ import {StoryComponent} from "../components/home/story";
 import {EventComponent} from '../components/home/event';
 import {GalleryComponent} from '../components/home/gallery';
 import {Button} from 'react-bootstrap';
-import { MdOutlineCardGiftcard } from "react-icons/md";
+import {MdOutlineCardGiftcard} from "react-icons/md";
+import React from 'react';
+import {GiftModal} from '../components/home/gift_modal';
+import Header from '../components/header';
 
 const BgMaskImage = "/images/bg-mask.png";
 const BgMask2Image = "/images/bg-mask-2.png";
@@ -49,7 +52,7 @@ const BgMask3 = styled.div`
 `;
 const SendGift = styled.div`
   position: fixed;
-  bottom: 10%;
+  bottom: 17%;
   left: 0;
   right: 0;
   margin: auto;
@@ -59,29 +62,62 @@ const SendGift = styled.div`
 const BtnGift = styled(Button)`
   background-color: #fff;
   color: black;
-  border: solid 2px #e6e6e6;
+  border: solid 2px #000;
+  font-family: 'Quicksand Bold';
+`;
+const Audio = styled.audio`
+  position: fixed;
+  z-index: 4;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  margin: auto;
 `;
 
 const Home: NextPage = () => {
+  const [show, setShow] = React.useState<boolean>(false);
+  const [open, setOpen] = React.useState<boolean>(false);
+  const audioEl = React.useRef<HTMLAudioElement>(null);
+
+  React.useEffect(() => {
+    if (open && audioEl.current) {
+      // audioEl.current.muted = false;
+      audioEl.current.play();
+    }
+  }, [open]);
+
   return (
     <>
-      <HeaderComponent />
-      <BgMask />
-      <CovidInfoComponent />
-      <StoryComponent />
-      <BgMask2 />
-      <BrideComponent />
-      <BgMask3 />
-      <EventComponent />
-      <BgMask2 />
-      <GalleryComponent />
-      <BgMask3 />
-      <SendGift className="d-flex justify-content-center">
-        <BtnGift className="rounded-pill">
-          <MdOutlineCardGiftcard />
-          <span className="ms-2">Kirim Hadiah</span>
-        </BtnGift>
-      </SendGift>
+      {!open && (
+        <HeaderComponent open={open} setOpen={setOpen} />
+      )}
+      {open && (
+        <>
+          <Header />
+          <HeaderComponent open={open} setOpen={setOpen} />
+          <BgMask />
+          <CovidInfoComponent />
+          <StoryComponent />
+          <BgMask2 />
+          <BrideComponent />
+          <BgMask3 />
+          <EventComponent />
+          <BgMask2 />
+          <GalleryComponent />
+          <BgMask3 />
+          <SendGift className="d-flex justify-content-center">
+            <BtnGift className="rounded-pill" onClick={() => setShow(true)}>
+              <MdOutlineCardGiftcard />
+              <span className="ms-2">Kirim Hadiah</span>
+            </BtnGift>
+          </SendGift>
+          <GiftModal show={show} onHide={() => setShow(false)} />
+          <Audio controls autoPlay ref={audioEl}>
+            <source src="/audio/kasih_putih.mp3" type="audio/mp3" />
+            Your browser does not support the audio element.
+          </Audio>
+        </>
+      )}
     </>
   );
 };

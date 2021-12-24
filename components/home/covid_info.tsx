@@ -2,6 +2,8 @@ import React from "react";
 
 import styled from "styled-components";
 import Image from "next/image";
+import {Heading2} from '../../pages/_app';
+import {Col, Row} from 'react-bootstrap';
 
 const MaskImage = "/images/mask.png";
 const SocialDistanceImage = "/images/social-distance.png";
@@ -14,9 +16,6 @@ export const CovidText = styled.p`
   text-decoration: underline;
   font-family: Quicksand, sans-serif;
   text-align: center;
-`;
-const Heading2 = styled.h2`
-  font-family: "Quicksand Bold", sans-serif;
 `;
 const Section = styled.section`
   width: 70%;
@@ -35,26 +34,50 @@ export const CovidInfoComponent = () => (
         harapkan kedatangan para tamu undangan agar menjalankan protokol yang
         berlaku.
       </p>
-      <div className="d-flex flex-row justify-content-around text-center">
-        <div className="p-3 d-flex flex-column align-items-center">
-          <Image src={MaskImage} alt="masker" width={80} height={80} />
-          Wajib menggunakan masker
-        </div>
-        <div className="p-3 d-flex flex-column align-items-center">
-          <Image src={SocialDistanceImage} alt="distance" width={80} height={80} />
-          Saling Menjaga Jarak di Dalam Acara
-        </div>
-      </div>
-      <div className="d-flex flex-row justify-content-around text-center">
-        <div className="p-3 d-flex flex-column align-items-center">
-          <Image src={NamasteImage} alt="namaste" width={80} height={80} />
-          Menggunakan salam namastee sebagai ganti berjabat tangan
-        </div>
-        <div className="p-3 d-flex flex-column align-items-center">
-          <Image src={HandWashImage} alt="hand-wash" width={80} height={80} />
-          Jaga Kebersihan dengan Mencuci Tangan atau Handsanitizer
-        </div>
-      </div>
+      <Row className="gy-5">
+        <Col sm={6} md={6} className="text-center">
+          <Row>
+            <Col sm={12}>
+              <Image src={MaskImage} alt="masker" width={80} height={80} />
+            </Col>
+            <Col sm={12}>
+              Wajib menggunakan masker
+            </Col>
+          </Row>
+        </Col>
+        <Col sm={6} md={6} className="text-center">
+          <Row>
+            <Col sm={12}>
+              <Image src={SocialDistanceImage} alt="distance" width={80} height={80} />
+            </Col>
+            <Col>
+              Saling Menjaga Jarak di Dalam Acara
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+      <Row className="gy-5 mt-2">
+        <Col sm={6} md={6} className="text-center">
+          <Row>
+            <Col sm={12}>
+              <Image src={NamasteImage} alt="namaste" width={80} height={80} />
+            </Col>
+            <Col sm={12}>
+              Menggunakan salam namastee sebagai ganti berjabat tangan
+            </Col>
+          </Row>
+        </Col>
+        <Col sm={6} md={6} className="text-center">
+          <Row>
+            <Col sm={12}>
+              <Image src={HandWashImage} alt="hand-wash" width={80} height={80} />
+            </Col>
+            <Col>
+              Jaga Kebersihan dengan Mencuci Tangan atau Handsanitizer
+            </Col>
+          </Row>
+        </Col>
+      </Row>
     </div>
   </Section>
 );

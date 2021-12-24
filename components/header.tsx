@@ -12,9 +12,6 @@ import {
 const Tabs = styled(Navbar)`
   box-shadow: 0 -6px 10px -5px hsl(0deg 0% 44% / 30%);
   padding: 0;
-  // @media (min-width: 1200px) {
-  //   max-width: 60%;
-  // }
 `;
 
 const TabLink = styled(Nav.Link)`

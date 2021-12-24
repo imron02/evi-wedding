@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import styled from 'styled-components';
 import {Col, Row} from 'react-bootstrap';
+import {Heading2} from '../../pages/_app';
 
 const LeavesLeftImage = "/images/leaves-left.png";
 const LeavesRightImage = "/images/leaves-right.png";
@@ -14,13 +15,6 @@ const FiveR5 = "/images/5R-5.jpg";
 
 const galleries = [FiveR, FiveR1, FiveR2, FiveR3, FiveR4, FiveR5];
 
-const Heading2 = styled.h2`
-  font-family: "Quicksand Bold", sans-serif;
-  margin-top: 1.5rem;
-  @media (max-device-width: 640px) {
-    font-size: 2rem;
-  }
-`;
 const Section = styled.section`
   background-color: rgba(109, 148, 142, 0.2);
   padding-top: 8rem;

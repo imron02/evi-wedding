@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
 import { Col, Row } from "react-bootstrap";
+import {Heading2} from '../../pages/_app';
 
 const LeavesLeftImage = "/images/leaves-left.png";
 const LeavesRightImage = "/images/leaves-right.png";
@@ -11,15 +12,13 @@ const Section = styled.section`
   padding-top: 8rem;
   padding-bottom: 10rem;
 `;
-const Heading2 = styled.h2`
+const Name = styled.h2`
   font-family: "Quicksand Bold", sans-serif;
   margin-top: 1.5rem;
+  line-height: 20px;
   @media (max-device-width: 640px) {
     font-size: 2rem;
   }
-`;
-const Name = styled(Heading2)`
-  line-height: 20px;
 `;
 const CircleImage = styled.div`
   width: 270px;

@@ -3,6 +3,7 @@ import React from 'react'
 import styled from "styled-components";
 import Slider from "react-slick";
 import Image from 'next/image'
+import {Heading2} from '../../pages/_app';
 
 const FlowerImage = "/images/flower.png";
 const Section = styled.section`
@@ -10,10 +11,6 @@ const Section = styled.section`
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 10%;
-`;
-const Heading2 = styled.h2`
-  font-family: "Quicksand Bold", sans-serif;
-  margin-top: 1.5rem;
 `;
 const StoryTitle = styled.p`
   font-size: 20px;
