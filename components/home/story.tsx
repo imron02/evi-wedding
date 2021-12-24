@@ -40,33 +40,14 @@ export const StoryComponent = () => (
     </div>
     <Slider {...settings} className='col-lg-8 mx-auto'>
       <div className="px-1">
-        <StoryTitle>Pertama Kenal</StoryTitle>
+        <StoryTitle>First Meet</StoryTitle>
         <p className="text-center px-1">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-          atque, autem ducimus explicabo id ipsa, labore libero magnam non odio
-          odit, optio sequi tenetur? Culpa cupiditate dolorum harum impedit
-          incidunt!
+          Pertama kali kita kenal pada tahun 2019. Pada saat itu kita hanya sebatas kenal aja
         </p>
         <p className="text-center">
           <small>
             <i>
-              <b className="text-bold">01 January 2020</b> - Gramedia{" "}
-            </i>
-          </small>
-        </p>
-      </div>
-      <div className="px-1">
-        <StoryTitle>Menyatakan Cinta</StoryTitle>
-        <p className="text-center">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-          atque, autem ducimus explicabo id ipsa, labore libero magnam non odio
-          odit, optio sequi tenetur? Culpa cupiditate dolorum harum impedit
-          incidunt!
-        </p>
-        <p className="text-center">
-          <small>
-            <i>
-              <b className="text-bold">10 January 2020</b> - Pantai Parangtritis
+              <b className="text-bold">2019</b>
             </i>
           </small>
         </p>
@@ -74,15 +55,12 @@ export const StoryComponent = () => (
       <div className="px-1">
         <StoryTitle>Tunangan</StoryTitle>
         <p className="text-center">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-          atque, autem ducimus explicabo id ipsa, labore libero magnam non odio
-          odit, optio sequi tenetur? Culpa cupiditate dolorum harum impedit
-          incidunt!
+          Setelah 2 tahun kenal akhirnya kita memutuskan untuk komit dan menuju ke jenjang yang lebih serius.
         </p>
         <p className="text-center">
           <small>
             <i>
-              <b className="text-bold">19 January 2020</b> - Rumah Juliet{" "}
+              <b className="text-bold">13 Juli 2020</b>
             </i>
           </small>
         </p>

@@ -84,13 +84,12 @@ export const BrideComponent = () => (
             />
           </CircleImage>
           <Name>
-            - Romeo -<span className="d-block mt-3">Romeo Mantoko</span>
+            - Bosnia -<span className="d-block mt-3">Bosnia Situmorang</span>
           </Name>
           <p className="mt-3">
-            Putri dari Pasangan <br />
-            <b>Joko &amp; Siti</b>
+            Putra dari Pasangan <br />
+            <b>Bpk. Hasiholan Situmorang &amp; Ibu Nur Hijah Sihotang</b>
           </p>
-          <p className="m-0">Jl. Apel 15C, Condongcatur, Sleman, Yogyakarta</p>
         </Col>
         <Col
           data-aos="zoom-in-down"
@@ -107,13 +106,12 @@ export const BrideComponent = () => (
             />
           </CircleImage>
           <Name>
-            - Juliet -<span className="d-block mt-3">Juliet Capulet</span>
+            - Evi -<span className="d-block mt-3">Evi Ida Amalia</span>
           </Name>
           <p className="mt-3">
             Putri dari Pasangan <br />
-            <b>Joko &amp; Siti</b>
+            <b>Bpk. Jaenudin &amp; Ibu Wasripah</b>
           </p>
-          <p className="m-0">Jl. Apel 15C, Condongcatur, Sleman, Yogyakarta</p>
         </Col>
       </Row>
     </div>

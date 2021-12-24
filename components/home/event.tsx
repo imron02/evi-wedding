@@ -57,7 +57,7 @@ export const EventComponent = () => (
             <CardSubtitle className="my-3">
               Sabtu, 5 Maret 2022
               <br />
-              09.00 - 16:00 WIB
+              10.00 - 17:00 WIB
             </CardSubtitle>
             <Card.Text>
               Yon Arhanud 1 Kostrad

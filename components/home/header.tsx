@@ -6,7 +6,7 @@ import {Button} from 'react-bootstrap';
 
 const Header = styled.section`
   &:before {
-    background: ${({open}: { open: boolean }) => !open ? 'linear-gradient(0deg, #3a1d2e 0%, #7aa8b3 70%, #41d5ed 100%)' : 'linear-gradient(180deg, #fff, transparent 0%, #000)'};
+    background: linear-gradient(180deg, #fff, transparent 0%, #000);
     content: "";
     height: 100%;
     left: 0;
@@ -17,6 +17,8 @@ const Header = styled.section`
   }
 
   position: relative;
+  height: 100vh;
+  max-height: -webkit-fill-available;
 `;
 const Title = styled.div`
   color: #fff;
@@ -25,7 +27,7 @@ const Title = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: 2;
 `;
 const Heading4 = styled.h4`
@@ -49,12 +51,12 @@ export const HeaderComponent = ({open, setOpen}: { open: boolean, setOpen: (type
   const {query} = useRouter();
 
   return (
-    <Header id="home" style={{height: "100vh"}} className="mx-auto" open={open}>
+    <Header id="home" className="mx-auto">
       <Title>
         <div className="text-center" style={{marginTop: "5rem"}}>
-          <Heading4>We Are Getting Married</Heading4>
+          <Heading2>The Wedding Of</Heading2>
           <Heading1>Evi &amp; Bosnia</Heading1>
-          <Heading2>5 Maret 2022</Heading2>
+          <Heading2>Sabtu, 5 Maret 2022</Heading2>
 
           <p className="mt-5">
             <i>Kepada Yth</i>

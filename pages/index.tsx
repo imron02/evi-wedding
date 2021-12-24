@@ -11,6 +11,7 @@ import {MdOutlineCardGiftcard} from "react-icons/md";
 import React from 'react';
 import {GiftModal} from '../components/home/gift_modal';
 import Header from '../components/header';
+import {DiscussionEmbed} from "disqus-react";
 
 const BgMaskImage = "/images/bg-mask.png";
 const BgMask2Image = "/images/bg-mask-2.png";
@@ -74,6 +75,23 @@ const Audio = styled.audio`
   margin: auto;
 `;
 
+const DisqusComments = () => {
+  const disqusShortname = "your-disqus-shortname"
+  const disqusConfig = {
+    url: "https://evi-bosnia.vercel.app/",
+    identifier: '1', // Single post id
+    title: 'The Wedding Of Evi & Bosnia' // Single post title
+  }
+  return (
+    <div style={{ marginBottom: '20%' }}>
+      <DiscussionEmbed
+        shortname={disqusShortname}
+        config={disqusConfig}
+      />
+    </div>
+  )
+}
+
 const Home: NextPage = () => {
   const [show, setShow] = React.useState<boolean>(false);
   const [open, setOpen] = React.useState<boolean>(false);
@@ -116,6 +134,7 @@ const Home: NextPage = () => {
             <source src="/audio/kasih_putih.mp3" type="audio/mp3" />
             Your browser does not support the audio element.
           </Audio>
+          <DisqusComments />
         </>
       )}
     </>

@@ -49,8 +49,8 @@ export const GiftModal = ({show, onHide}: GiftModalProps) => {
         <div className="mt-4">
           <Bank>BCA</Bank>
           <div className="d-flex justify-content-between">
-            <span onClick={() => copyText('9999999')} style={{cursor: 'pointer'}}>
-            123123123123
+            <span onClick={() => copyText('7485066705')} style={{cursor: 'pointer'}}>
+            7485066705
               <RiFileCopy2Line />
             </span>
             <Image alt="bca-image" src={BcaImage} width="100%" height={13} objectFit="scale-down" />
