@@ -19,7 +19,13 @@ const Name = styled.h2`
   margin-top: 1.5rem;
   line-height: 20px;
   @media (max-device-width: 640px) {
-    font-size: 2rem;
+    font-size: 1.2rem;
+  }
+`;
+const NameDesc = styled.h2`
+  font-size: 16px;
+  @media (max-device-width: 640px) {
+    font-size: 14px;
   }
 `;
 const CircleImage = styled.div`
@@ -84,10 +90,10 @@ export const BrideComponent = () => (
           <Name>
             - Bosnia -<span className="d-block mt-3">Bosnia Situmorang</span>
           </Name>
-          <p className="mt-3">
+          <NameDesc className="mt-3">
             Putra dari Pasangan <br />
             <b>Bpk. Hasiholan Situmorang &amp; Ibu Nur Hijah Sihotang</b>
-          </p>
+          </NameDesc>
         </Col>
         <Col
           data-aos="zoom-in-down"
@@ -102,10 +108,10 @@ export const BrideComponent = () => (
           <Name>
             - Evi -<span className="d-block mt-3">Evi Ida Amalia</span>
           </Name>
-          <p className="mt-3">
+          <NameDesc className="mt-3">
             Putri dari Pasangan <br />
             <b>Bpk. Jaenudin &amp; Ibu Wasripah</b>
-          </p>
+          </NameDesc>
         </Col>
       </Row>
     </div>

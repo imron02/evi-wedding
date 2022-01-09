@@ -57,6 +57,10 @@ export const GiftModal = ({show, onHide}: GiftModalProps) => {
           </div>
           <span>A/n Evi Ida Amalia</span>
           <hr />
+          <Bank>Kirim Kado</Bank>
+          <div className="d-flex justify-content-between">
+            <span>Jl. Swadaya No.118, RT.004/RW.003, Kel. Rawa Mekar Jaya, Kec. Serpong</span>
+          </div>
           <div className="text-center">
             <Image alt="qr-image" src={QRImage} width={400} height={400} objectFit="contain" />
           </div>
