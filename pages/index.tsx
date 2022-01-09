@@ -11,7 +11,7 @@ import {MdOutlineCardGiftcard} from "react-icons/md";
 import React from 'react';
 import {GiftModal} from '../components/home/gift_modal';
 import Header from '../components/header';
-import {DiscussionEmbed} from "disqus-react";
+import {GuestBookComponent} from '../components/home/guest_book';
 
 const BgMaskImage = "/images/bg-mask.png";
 const BgMask2Image = "/images/bg-mask-2.png";
@@ -81,23 +81,6 @@ const Disqus = styled.div`
   }
 `
 
-const DisqusComments = () => {
-  const disqusShortname = "http-evi-bosnia-vercel-app"
-  const disqusConfig = {
-    url: "https://evi-bosnia.vercel.app/",
-    identifier: '1', // Single post id
-    title: 'The Wedding Of Evi & Bosnia' // Single post title
-  }
-  return (
-    <Disqus className="mt-5 px-1">
-      <DiscussionEmbed
-        shortname={disqusShortname}
-        config={disqusConfig}
-      />
-    </Disqus>
-  )
-}
-
 const Home: NextPage = () => {
   const [show, setShow] = React.useState<boolean>(false);
   const [open, setOpen] = React.useState<boolean>(false);
@@ -129,6 +112,7 @@ const Home: NextPage = () => {
           <BgMask2 />
           <GalleryComponent />
           <BgMask3 />
+          <GuestBookComponent />
           <SendGift className="d-flex justify-content-center">
             <BtnGift className="rounded-pill" onClick={() => setShow(true)}>
               <MdOutlineCardGiftcard />
@@ -140,7 +124,6 @@ const Home: NextPage = () => {
             <source src="/audio/kasih_putih.mp3" type="audio/mp3" />
             Your browser does not support the audio element.
           </Audio>
-          <DisqusComments />
         </>
       )}
     </>

@@ -7,6 +7,7 @@ import {
   MdFavorite,
   MdInsertPhoto,
   MdEventAvailable,
+  MdMessage,
 } from "react-icons/md";
 
 const Tabs = styled(Navbar)`
@@ -50,6 +51,11 @@ const menu = [
     label: "Gallery",
     href: "#gallery",
   },
+  {
+    icon: <MdMessage />,
+    label: "Guest Book",
+    href: "#guest-book",
+  }
 ];
 
 const Header = () => (

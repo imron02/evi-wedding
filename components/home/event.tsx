@@ -29,8 +29,8 @@ export const EventComponent = () => (
     <div className="d-flex align-items-center flex-column mb-5">
       <Image src={FlowerImage} alt="Flower" width={250} height={100} />
     </div>
-    <Row className="g-0 justify-content-center mt-5 text-center">
-      <Col lg={5}>
+    <Row className="g-0 justify-content-center mt-5 text-center px-2">
+      <Col lg={5} className="pb-2">
         <CardBox>
           <Card.Body>
             <Card.Title>
