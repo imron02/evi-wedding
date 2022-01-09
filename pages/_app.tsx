@@ -8,6 +8,7 @@ import Head from "next/head";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "bootstrap/dist/css/bootstrap.css";
+import 'react-image-lightbox/style.css';
 import "../styles/globals.css";
 
 export const Heading2 = styled.h2`
@@ -40,7 +41,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:description"
               content="Evi &amp; Bosnnia akan menikah pada hari Sabtu, 5 Maret 2022" />
         <meta property="og:image"
-              content="/images/cover.jpeg" />
+              content="/images/5R-21.jpeg" />
         <meta property="og:image:alt" content="Evi &amp; Bosnia Wedding Image" />
         <link href="https://fonts.cdnfonts.com/css/quicksand" rel="stylesheet" />
         <link href="https://fonts.cdnfonts.com/css/chopin-script" rel="stylesheet" />

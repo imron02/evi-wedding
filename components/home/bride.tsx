@@ -2,10 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
 import { Col, Row } from "react-bootstrap";
-import {Heading2} from '../../pages/_app';
+import { Heading2 } from "../../pages/_app";
 
 const LeavesLeftImage = "/images/leaves-left.png";
 const LeavesRightImage = "/images/leaves-right.png";
+const SingleBoy = "/images/Single-Boy.jpg";
+const SingleGirl = "/images/Single-Girl.jpg";
 
 const Section = styled.section`
   background-color: rgba(109, 148, 142, 0.2);
@@ -27,8 +29,8 @@ const CircleImage = styled.div`
   position: relative;
   margin: 3rem auto;
   border-radius: 50%;
-  border: 5px solid #c0616a;
   background-color: #ecf0f1;
+  box-shadow: 0 1rem 1.25rem rgb(0 0 0 / 23%);
 `;
 
 export const BrideComponent = () => (
@@ -77,11 +79,7 @@ export const BrideComponent = () => (
           className="col-lg-6 text-center"
         >
           <CircleImage className="circle-image">
-            <Image
-              src="https://demo.datengdong.com/uploads/thumbs/couple/tccbn7tmom.png"
-              alt="Juliet Photo"
-              layout="fill"
-            />
+            <Image src={SingleBoy} alt="Juliet Photo" layout="fill" objectFit="cover" />
           </CircleImage>
           <Name>
             - Bosnia -<span className="d-block mt-3">Bosnia Situmorang</span>
@@ -99,11 +97,7 @@ export const BrideComponent = () => (
           className="col-lg-6 text-center"
         >
           <CircleImage className="circle-image">
-            <Image
-              src="https://demo.datengdong.com/uploads/thumbs/couple/il0dspbrza.png"
-              alt="Juliet Photo"
-              layout="fill"
-            />
+            <Image src={SingleGirl} alt="Juliet Photo" layout="fill" objectFit="cover" />
           </CircleImage>
           <Name>
             - Evi -<span className="d-block mt-3">Evi Ida Amalia</span>

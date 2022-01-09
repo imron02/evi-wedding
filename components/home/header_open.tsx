@@ -5,6 +5,17 @@ import { useRouter } from "next/router";
 import { Button } from "react-bootstrap";
 
 const Header = styled.section`
+  &:before {
+    background: linear-gradient(180deg, #fff, transparent 50%, #000);
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+
   position: relative;
   height: 100vh;
   max-height: -webkit-fill-available;
@@ -36,23 +47,8 @@ const Heading2 = styled.h2`
   font-family: "Quicksand Bold", sans-serif;
   font-size: 20px;
 `;
-const TheWedding = styled.div`
-  top: -2rem;
-  position: relative;
-  margin: 0 auto;
-`;
-const Invitation = styled.div`
-  position: relative;
-  bottom: -3rem;
-`;
-const ButtonInvite = styled(Button)`
-  color: black;
-  background-color: #e8dac7;
-  border-color: black;
-  font-weight: 900;
-`;
 
-export const HeaderComponent = ({
+export const HeaderOpenComponent = ({
   open,
   setOpen,
 }: {
@@ -64,27 +60,11 @@ export const HeaderComponent = ({
   return (
     <Header id="home" className="mx-auto">
       <Title>
-        <div className="text-center position-absolute" style={{ top: "23%" }}>
-          <TheWedding>
+        <div className="text-center position-absolute" style={{top: '5%'}}>
+          <div style={{ color: 'black' }}>
             <Heading2>The Wedding Of</Heading2>
             <Heading1>Evi &amp; Bosnia</Heading1>
-            <Heading2>Sabtu, 5 Maret 2022</Heading2>
-          </TheWedding>
-        </div>
-        <div
-          className="text-center position-absolute"
-          style={{ bottom: "24%" }}
-        >
-          <Invitation>
-            {!open && (
-              <ButtonInvite
-                className="rounded-pill"
-                onClick={() => setOpen(true)}
-              >
-                Buka Undangan
-              </ButtonInvite>
-            )}
-          </Invitation>
+          </div>
         </div>
       </Title>
       <div
@@ -97,7 +77,7 @@ export const HeaderComponent = ({
       >
         <Image
           alt="img-background"
-          src="/images/5R-2.jpeg"
+          src="/images/5R-21.jpg"
           layout="fill"
           objectFit="cover"
         />

@@ -1,17 +1,18 @@
-import type {NextPage} from "next";
+import type { NextPage } from "next";
 import styled from "styled-components";
-import {BrideComponent} from "../components/home/bride";
-import {CovidInfoComponent} from "../components/home/covid_info";
-import {HeaderComponent} from "../components/home/header";
-import {StoryComponent} from "../components/home/story";
-import {EventComponent} from '../components/home/event';
-import {GalleryComponent} from '../components/home/gallery';
-import {Button} from 'react-bootstrap';
-import {MdOutlineCardGiftcard} from "react-icons/md";
-import React from 'react';
-import {GiftModal} from '../components/home/gift_modal';
-import Header from '../components/header';
-import {GuestBookComponent} from '../components/home/guest_book';
+import { BrideComponent } from "../components/home/bride";
+import { CovidInfoComponent } from "../components/home/covid_info";
+import { HeaderComponent } from "../components/home/header";
+import { StoryComponent } from "../components/home/story";
+import { EventComponent } from "../components/home/event";
+import { GalleryComponent } from "../components/home/gallery";
+import { Button } from "react-bootstrap";
+import { MdOutlineCardGiftcard } from "react-icons/md";
+import React from "react";
+import { GiftModal } from "../components/home/gift_modal";
+import Header from "../components/header";
+import { GuestBookComponent } from "../components/home/guest_book";
+import { HeaderOpenComponent } from "../components/home/header_open";
 
 const BgMaskImage = "/images/bg-mask.png";
 const BgMask2Image = "/images/bg-mask-2.png";
@@ -64,7 +65,7 @@ const BtnGift = styled(Button)`
   background-color: #fff;
   color: black;
   border: solid 2px #000;
-  font-family: 'Quicksand Bold';
+  font-family: "Quicksand Bold";
 `;
 const Audio = styled.audio`
   position: fixed;
@@ -79,7 +80,7 @@ const Disqus = styled.div`
   @media (max-device-width: 640px) {
     padding-bottom: 50%;
   }
-`
+`;
 
 const Home: NextPage = () => {
   const [show, setShow] = React.useState<boolean>(false);
@@ -95,13 +96,11 @@ const Home: NextPage = () => {
 
   return (
     <>
-      {!open && (
-        <HeaderComponent open={open} setOpen={setOpen} />
-      )}
+      {!open && <HeaderComponent open={open} setOpen={setOpen} />}
       {open && (
         <>
           <Header />
-          <HeaderComponent open={open} setOpen={setOpen} />
+          <HeaderOpenComponent open={open} setOpen={setOpen} />
           <BgMask />
           <CovidInfoComponent />
           <StoryComponent />
