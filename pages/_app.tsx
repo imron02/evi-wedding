@@ -41,7 +41,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:description"
               content="Evi &amp; Bosnnia akan menikah pada hari Sabtu, 5 Maret 2022" />
         <meta property="og:image"
-              content="/images/5R-21.jpeg" />
+              content="/images/5R-21.jpg" />
         <meta property="og:image:alt" content="Evi &amp; Bosnia Wedding Image" />
         <link href="https://fonts.cdnfonts.com/css/quicksand" rel="stylesheet" />
         <link href="https://fonts.cdnfonts.com/css/chopin-script" rel="stylesheet" />
