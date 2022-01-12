@@ -1,11 +1,11 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, {Fragment, useEffect, useState} from "react";
 import Image from "next/image";
 import styled from "styled-components";
-import { Heading2 } from "../../pages/_app";
-import { Button, Card, Col, FloatingLabel, Form, Row } from "react-bootstrap";
+import {Heading2} from "../../pages/_app";
+import {Button, Card, Col, FloatingLabel, Form, Row} from "react-bootstrap";
 import firebase from "../../firebase/clientApp";
-import { format } from "date-fns";
-import { MdCheckCircle } from "react-icons/md";
+import {format} from "date-fns";
+import {MdCheckCircle} from "react-icons/md";
 
 const FlowerImage = "/images/flower.png";
 
@@ -35,7 +35,7 @@ const Avatar = styled.div`
   background-color: rgb(164, 88, 97);
 `;
 const ShowDate = styled.small`
-  color: "#6c757d";
+  color: #6c757d;
   font-family: sans-serif;
   font-weight: 100;
 `;
@@ -94,7 +94,6 @@ export const GuestBookComponent = () => {
   };
 
   const fetchMoreComments = () => {
-    const newComments: Comments[] = [];
     commentsRef
       .startAfter(lastComment)
       .limit(20)
@@ -117,7 +116,7 @@ export const GuestBookComponent = () => {
         ...formDataObj,
         dates: firebase.firestore.FieldValue.serverTimestamp(),
       })
-      .then((docRef) => {
+      .then(() => {
         form.reset();
         alert("Sukses kirim pesan/doa");
       });
@@ -139,13 +138,14 @@ export const GuestBookComponent = () => {
       <div className="d-flex align-items-center flex-column mb-5">
         <Image src={FlowerImage} alt="Flower" width={250} height={100} />
       </div>
-      <div className="text-center">
+      <div className="px-3" style={{textAlign: 'justify'}}>
         <p>
-          &quot;Tidak ada solusi yang lebih baik bagi dua insan yang saling
-          mencintai di banding pernikahan.&quot;
+          &quot;Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu
+          sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan
+          sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.&quot;
         </p>
-        <Heading3 className="mb-5">HR. Ibnu Majah</Heading3>
-        <Heading2>Buku Tamu</Heading2>
+        <Heading3 className="mb-5 text-center">QS Ar-Rum: 21</Heading3>
+        <Heading2 className="text-center">Buku Tamu</Heading2>
       </div>
       <Row className="justify-content-center g-0 px-2">
         <Col md={7}>

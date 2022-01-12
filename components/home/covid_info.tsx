@@ -23,12 +23,12 @@ const Section = styled.section`
 `;
 const Header = styled.p`
   @media (max-device-width: 640px) {
-    font-size: 12px;
+    font-size: 13px;
   }
 `;
 const Protocol = styled(Row)`
   @media (max-device-width: 640px) {
-    font-size: 12px;
+    font-size: 13px;
   }
 `;
 

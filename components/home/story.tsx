@@ -42,7 +42,8 @@ export const StoryComponent = () => (
       <div className="px-1">
         <StoryTitle>First Meet</StoryTitle>
         <p className="text-center px-1">
-          Pertama kali kita kenal pada tahun 2019. Pada saat itu kita hanya sebatas kenal aja
+          Perkenalan pertama kami yaitu pada tahun 2019. Pada hari itu dia menyapaku dalam suatu pesan singkat. Hai evi
+          salam kenal ya 😊
         </p>
         <p className="text-center">
           <small>
@@ -55,7 +56,8 @@ export const StoryComponent = () => (
       <div className="px-1">
         <StoryTitle>Tunangan</StoryTitle>
         <p className="text-center">
-          Setelah 2 tahun kenal akhirnya kita memutuskan untuk komit dan menuju ke jenjang yang lebih serius.
+          Singkatnya, seiring berjalannya waktu. Kami memutuskan untuk berkomitmen ke jenjang yang lebih serius yaitu
+          pertunangan di tanggal 13 Juni 2021.
         </p>
         <p className="text-center">
           <small>

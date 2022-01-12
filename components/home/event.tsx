@@ -1,18 +1,18 @@
-import React from 'react';
-import Image from 'next/image';
-import {Button, Card, Col, Row} from 'react-bootstrap';
-import styled from 'styled-components';
+import React from "react";
+import Image from "next/image";
+import { Button, Card, Col, Row } from "react-bootstrap";
+import styled from "styled-components";
 
-const FlowerImage = '/images/flower.png';
+const FlowerImage = "/images/flower.png";
 
 const Heading2 = styled.h2`
   font-family: "Quicksand Bold", sans-serif;
 `;
 const CardBox = styled(Card)`
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 `;
 const CardSubtitle = styled(Card.Subtitle)`
-  font-family: 'Quicksand Bold Oblique';
+  font-family: "Quicksand Bold Oblique";
 `;
 const BtnMap = styled(Button)`
   cursor: pointer;
@@ -42,13 +42,13 @@ export const EventComponent = () => (
               08.00 - 09:00 WIB
             </CardSubtitle>
             <Card.Text>
-              Yon Arhanud 1 Kostrad
-              Pakualam, Serpong Utara, Tangerang, Banten 15325
+              Yon Arhanud 1 Kostrad Pakualam, Serpong Utara, Tangerang, Banten
+              15325
             </Card.Text>
           </Card.Body>
         </CardBox>
       </Col>
-      <Col lg={{span: 5, offset: 1}}>
+      <Col lg={{ span: 5, offset: 1 }}>
         <CardBox>
           <Card.Body>
             <Card.Title>
@@ -60,17 +60,33 @@ export const EventComponent = () => (
               10.00 - 17:00 WIB
             </CardSubtitle>
             <Card.Text>
-              Yon Arhanud 1 Kostrad
-              Pakualam, Serpong Utara, Tangerang, Banten 15325
+              Yon Arhanud 1 Kostrad Pakualam, Serpong Utara, Tangerang, Banten
+              15325
             </Card.Text>
           </Card.Body>
         </CardBox>
       </Col>
     </Row>
-    <div className="d-flex justify-content-center mt-5">
+    <div className="d-flex flex-column justify-content-center align-items-center mt-5">
       <BtnMap variant="secondary">
-        <a href="https://goo.gl/maps/jN6Xa8YQZbiycAkv8" target="_blank"
-           style={{textDecoration: 'none', color: 'black'}} rel="noreferrer">Buka Google Map</a>
+        <a
+          href="https://goo.gl/maps/jN6Xa8YQZbiycAkv8"
+          target="_blank"
+          style={{ textDecoration: "none", color: "black" }}
+          rel="noreferrer"
+        >
+          Buka Google Map
+        </a>
+      </BtnMap>
+      <BtnMap variant="secondary mt-4">
+        <a
+          href="http://instagram.com/_u/eviidaamalia"
+          target="_blank"
+          style={{ textDecoration: "none", color: "black" }}
+          rel="noreferrer"
+        >
+          Live streaming
+        </a>
       </BtnMap>
     </div>
   </section>
