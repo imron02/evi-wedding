@@ -59,13 +59,6 @@ export const StoryComponent = () => (
           Singkatnya, seiring berjalannya waktu. Kami memutuskan untuk berkomitmen ke jenjang yang lebih serius yaitu
           pertunangan di tanggal 13 Juni 2021.
         </p>
-        <p className="text-center">
-          <small>
-            <i>
-              <b className="text-bold">13 Juli 2020</b>
-            </i>
-          </small>
-        </p>
       </div>
     </Slider>
   </Section>

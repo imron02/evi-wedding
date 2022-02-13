@@ -88,7 +88,7 @@ export const BrideComponent = () => (
             <Image src={SingleBoy} alt="Juliet Photo" layout="fill" objectFit="cover" />
           </CircleImage>
           <Name>
-            - Pratu Bosnia -<span className="d-block mt-3">Pratu Bosnia Situmorang</span>
+            - Bosnia -<span className="d-block mt-3">Pratu Bosnia Situmorang</span>
           </Name>
           <NameDesc className="mt-3">
             Putra dari Pasangan <br />
@@ -110,7 +110,7 @@ export const BrideComponent = () => (
           </Name>
           <NameDesc className="mt-3">
             Putri dari Pasangan <br />
-            <b>Bpk. Jaenudin Tegal Purnawirawan &amp; Ibu Wasripah</b>
+            <b>Bpk. Jaenudin Tegal &amp; Ibu Wasripah</b>
           </NameDesc>
         </Col>
       </Row>

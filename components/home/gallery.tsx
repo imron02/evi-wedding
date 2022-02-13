@@ -7,11 +7,11 @@ import Lightbox from "react-image-lightbox";
 
 const LeavesLeftImage = "/images/leaves-left.png";
 const LeavesRightImage = "/images/leaves-right.png";
-const FiveR = "/images/adat-1.jpeg";
+const FiveR = "/images/adat-1.jpg";
 const FiveR1 = "/images/adat-2.jpeg";
-const FiveR2 = "/images/adat-3.jpeg";
+const FiveR2 = "/images/adat-3.jpg";
 const FiveR3 = "/images/adat-4.jpeg";
-const FiveR4 = "/images/pdu-1.jpeg";
+const FiveR4 = "/images/pdu-1.jpg";
 const FiveR5 = "/images/pdu-2.jpeg";
 const FiveR6 = "/images/pdu-3.jpeg";
 const FiveR7 = "/images/pdu-4.jpeg";
