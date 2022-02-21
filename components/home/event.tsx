@@ -42,7 +42,7 @@ export const EventComponent = () => (
               08.00 - 09:00 WIB
             </CardSubtitle>
             <Card.Text>
-              Yon Arhanud 1 Kostrad Pakualam, Serpong Utara, Tangerang, Banten
+              Aula Yon Arhanud 1 Kostrad Pakualam, Serpong Utara, Tangerang, Banten
               15325
             </Card.Text>
           </Card.Body>
@@ -60,7 +60,7 @@ export const EventComponent = () => (
               10.00 - 17:00 WIB
             </CardSubtitle>
             <Card.Text>
-              Yon Arhanud 1 Kostrad Pakualam, Serpong Utara, Tangerang, Banten
+              Aula Yon Arhanud 1 Kostrad Pakualam, Serpong Utara, Tangerang, Banten
               15325
             </Card.Text>
           </Card.Body>

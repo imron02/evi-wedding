@@ -42,8 +42,7 @@ export const StoryComponent = () => (
       <div className="px-1">
         <StoryTitle>First Meet</StoryTitle>
         <p className="text-center px-1">
-          Perkenalan pertama kami yaitu pada tahun 2019. Pada hari itu dia menyapaku dalam suatu pesan singkat. Hai evi
-          salam kenal ya 😊
+          Perkenalan pertama kami yaitu pada tahun 2019. Pada hari itu dia menyapaku dalam suatu pesan singkat.
         </p>
         <p className="text-center">
           <small>
@@ -58,6 +57,13 @@ export const StoryComponent = () => (
         <p className="text-center">
           Singkatnya, seiring berjalannya waktu. Kami memutuskan untuk berkomitmen ke jenjang yang lebih serius yaitu
           pertunangan di tanggal 13 Juni 2021.
+        </p>
+        <p className="text-center">
+          <small>
+            <i>
+              <b className="text-bold">2021</b>
+            </i>
+          </small>
         </p>
       </div>
     </Slider>

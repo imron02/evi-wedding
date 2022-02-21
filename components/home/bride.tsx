@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import { Col, Row } from "react-bootstrap";
-import { Heading2 } from "../../pages/_app";
+import {Col, Row} from "react-bootstrap";
+import {Heading2} from "../../pages/_app";
 
 const LeavesLeftImage = "/images/leaves-left.png";
 const LeavesRightImage = "/images/leaves-right.png";
@@ -79,23 +79,6 @@ export const BrideComponent = () => (
     <div className="col-lg-8 mx-auto">
       <Row className="g-0">
         <Col
-          data-aos="zoom-in-up"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="1000"
-          className="col-lg-6 text-center"
-        >
-          <CircleImage className="circle-image">
-            <Image src={SingleBoy} alt="Juliet Photo" layout="fill" objectFit="cover" />
-          </CircleImage>
-          <Name>
-            - Bosnia -<span className="d-block mt-3">Pratu Bosnia Situmorang</span>
-          </Name>
-          <NameDesc className="mt-3">
-            Putra dari Pasangan <br />
-            <b>Bpk. Hasiholan Situmorang &amp; Ibu Nur Hijah Sihotang</b>
-          </NameDesc>
-        </Col>
-        <Col
           data-aos="zoom-in-down"
           data-aos-easing="ease-out-cubic"
           data-aos-delay="200"
@@ -111,6 +94,23 @@ export const BrideComponent = () => (
           <NameDesc className="mt-3">
             Putri dari Pasangan <br />
             <b>Bpk. Jaenudin Tegal &amp; Ibu Wasripah</b>
+          </NameDesc>
+        </Col>
+        <Col
+          data-aos="zoom-in-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+          className="col-lg-6 text-center"
+        >
+          <CircleImage className="circle-image">
+            <Image src={SingleBoy} alt="Juliet Photo" layout="fill" objectFit="cover" />
+          </CircleImage>
+          <Name>
+            - Bosnia -<span className="d-block mt-3">Pratu Bosnia Situmorang</span>
+          </Name>
+          <NameDesc className="mt-3">
+            Putra dari Pasangan <br />
+            <b>Bpk. Hasiholan Situmorang &amp; Ibu Nur Hijah Sihotang</b>
           </NameDesc>
         </Col>
       </Row>
