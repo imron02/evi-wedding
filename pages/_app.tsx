@@ -42,9 +42,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:title" content="Evi &amp; Bosnia Wedding" />
         <meta property="og:description"
               content="Evi &amp; Bosnnia akan menikah pada hari Sabtu, 5 Maret 2022" />
-        {/*<meta property="og:image"*/}
-        {/*      content="https://evi-bosnia.vercel.app/images/cover.jpeg" />*/}
-        <meta property="og:image" content="https://demo.datengdong.com/uploads/thumbs/gallery/1949d9111354e8962623050b26440179f5caddd0MS.jpg" />
+        <meta property="og:image"
+              content="https://evi-bosnia.vercel.app/images/cover.jpeg" />
         <meta property="og:image:alt" content="Evi &amp; Bosnia Wedding Image" />
         <link href="https://fonts.cdnfonts.com/css/quicksand" rel="stylesheet" />
         <link href="https://fonts.cdnfonts.com/css/chopin-script" rel="stylesheet" />
