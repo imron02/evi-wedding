@@ -88,7 +88,7 @@ export const GuestBookComponent = () => {
         const { name, message, dates, visit } = doc.data();
         newComments.push({ name, message, dates: dates.toDate(), visit });
       });
-      setComments([...newComments, ...comments]);
+      setComments([...comments, ...newComments]);
       setLastComment(lastDoc);
     }
   };
